@@ -11,4 +11,8 @@ map("n", "<leader>d", function ()
   vim.lsp.buf.definition()
 end)
 
+map("n", "<leader>r", function ()
+  vim.lsp.buf.rename()
+end)
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
