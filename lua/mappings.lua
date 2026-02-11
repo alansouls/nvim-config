@@ -15,4 +15,9 @@ map("n", "<leader>r", function ()
   vim.lsp.buf.rename()
 end)
 
+map("n", "<F4>", function ()
+  vim.cmd("LspClangdSwitchSourceHeader")
+end)
+
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
