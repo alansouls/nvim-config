@@ -19,5 +19,8 @@ map("n", "<F4>", function ()
   vim.cmd("LspClangdSwitchSourceHeader")
 end)
 
+map("n", "<c-.>", function ()
+  vim.lsp.buf.code_action()
+end)
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
