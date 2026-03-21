@@ -12,6 +12,15 @@ return {
       require "configs.lspconfig"
     end,
   },
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      registries = {
+        "github:mason-org/mason-registry",
+        "github:Crashdummyy/mason-registry",
+      },
+    }
+  },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
