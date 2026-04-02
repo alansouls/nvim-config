@@ -7,6 +7,14 @@ return {
 
   -- These are some examples, uncomment them if you want to see them work!
   {
+
+    "seblyng/roslyn.nvim",
+    ft = "cs",
+    opts = {
+      filewatching = "roslyn"
+    },
+  },
+  {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
@@ -21,7 +29,6 @@ return {
       },
     }
   },
-
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
