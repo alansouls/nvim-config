@@ -1,7 +1,7 @@
 require "nvchad.autocmds"
 
 vim.api.nvim_create_autocmd({ 'BufWritePre' }, {
-  pattern = { '*.h', '*.cpp', '*.go', '*.cs', '*.lua' },
+  pattern = { '*.h', '*.cpp', '*.go', '*.cs', '*.lua', '*.csproj' },
   callback = function()
     vim.lsp.buf.format()
   end

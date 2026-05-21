@@ -5,13 +5,20 @@ return {
     opts = require "configs.conform",
   },
 
+  {
+    "github/copilot.vim",
+    ft = { "cs" },
+    opts = {
+    },
+  },
+
   -- These are some examples, uncomment them if you want to see them work!
   {
-
     "seblyng/roslyn.nvim",
-    ft = "cs",
+    ft = { "cs", "csproj" },
     opts = {
-      filewatching = "roslyn"
+      filewatching = "auto",
+      broad_search = true,
     },
   },
   {
